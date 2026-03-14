@@ -2,7 +2,10 @@ package com.example.project_navigation.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -21,25 +24,39 @@ fun PedidosScreen(modifier: Modifier = Modifier, navController: NavController) {
     Box(
         modifier = modifier
             .fillMaxSize()
-            .background(Color(0xFFFA9A9A9))
+            .background(Color.White)
             .padding(32.dp)
     ) {
         Text(
             text = "PEDIDOS",
-            fontSize = 24.sp,
+            fontSize = 30.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White
         )
-        Button(
-            onClick = { navController.navigate("menu") },
-            colors = ButtonDefaults.buttonColors(Color.White),
-            modifier = Modifier.align(Alignment.Center)
+        Column(
+            modifier = Modifier.align(Alignment.Center),
+            horizontalAlignment = Alignment.CenterHorizontally
         ) {
+
             Text(
-                text = "Voltar",
-                fontSize = 20.sp,
-                color = Color.Blue
+                text = "🙅‍♀️",
+                fontSize = 70.sp,
+                color = Color.Black,
+                modifier = Modifier.padding(bottom = 8.dp)
             )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
+            Button(
+                onClick = { navController.navigate("menu") },
+                colors = ButtonDefaults.buttonColors(Color.White)
+            ) {
+                Text(
+                    text = "Voltar",
+                    fontSize = 30.sp,
+                    color = Color.Magenta
+                )
+            }
         }
     }
 }

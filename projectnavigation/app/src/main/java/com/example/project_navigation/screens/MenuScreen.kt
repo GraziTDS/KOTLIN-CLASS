@@ -26,7 +26,7 @@ fun MenuScreen(modifier: Modifier = Modifier, navController: NavController) {
     Box(
         modifier = modifier
             .fillMaxSize()
-            .background(Color(0xFF2C4EC7))
+            .background(Color.Magenta)
             .padding(32.dp)
     ) {
         Text(
@@ -41,6 +41,16 @@ fun MenuScreen(modifier: Modifier = Modifier, navController: NavController) {
                 .fillMaxWidth()
                 .align(Alignment.Center)
         ) {
+
+            Text(
+                text = "👩‍💻",
+                fontSize = 70.sp,
+                color = Color.Black,
+                modifier = Modifier.padding(bottom = 8.dp)
+            )
+
+            Spacer(modifier = Modifier.height(16.dp))
+
             Button(
                 onClick = {navController.navigate("perfil") },
                 colors = ButtonDefaults.buttonColors(Color.White),
@@ -49,7 +59,7 @@ fun MenuScreen(modifier: Modifier = Modifier, navController: NavController) {
                 Text(
                     text = "Perfil",
                     fontSize = 20.sp,
-                    color = Color.Blue
+                    color = Color.Black
                 )
             }
             Spacer(modifier = Modifier.height(16.dp))
@@ -61,7 +71,7 @@ fun MenuScreen(modifier: Modifier = Modifier, navController: NavController) {
                 Text(
                     text = "Pedidos",
                     fontSize = 20.sp,
-                    color = Color.Blue
+                    color = Color.Black
                 )
             }
             Spacer(modifier = Modifier.height(16.dp))
@@ -73,7 +83,7 @@ fun MenuScreen(modifier: Modifier = Modifier, navController: NavController) {
                 Text(
                     text = "Sair",
                     fontSize = 20.sp,
-                    color = Color.Blue
+                    color = Color.Black
                 )
             }
         }
