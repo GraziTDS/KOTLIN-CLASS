@@ -18,7 +18,7 @@ O aplicativo possui quatro telas principais:
 
 Aqui o usuário pode acessar o aplicativo através do botão **Entrar**.
 
-![Tela Login](images/tela1.png)
+![Tela Login](projectnavigation/images/tela1.png)
 
 ---
 
@@ -26,20 +26,20 @@ Aqui o usuário pode acessar o aplicativo através do botão **Entrar**.
 
 Após entrar, o usuário acessa o menu principal com opções de navegação.
 
-![Tela Menu](images/tela2.png)
+![Tela Menu](projectnavigation/images/tela2.png)
 
 ---
 
 
 ### Tela de Perfil voltar
 
-![Tela Menu](images/tela3.png)
+![Tela Menu](projectnavigation/images/tela3.png)
 
 ---
 
 ### Tela de Pedidos voltar
 
-![Tela Menu](images/tela4.png)
+![Tela Menu](projectnavigation/images/tela4.png)
 
 ---
 
