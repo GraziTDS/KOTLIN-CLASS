@@ -1,4 +1,4 @@
-package com.example.project_navigation.ui.theme
+package github.com.GraziTDS.project_navigation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

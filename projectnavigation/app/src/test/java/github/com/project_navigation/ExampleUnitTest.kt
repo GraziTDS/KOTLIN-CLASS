@@ -1,4 +1,4 @@
-package com.example.project_navigation
+package github.com.project_navigation
 
 import org.junit.Test
 

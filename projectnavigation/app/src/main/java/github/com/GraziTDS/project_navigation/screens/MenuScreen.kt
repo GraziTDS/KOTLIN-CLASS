@@ -1,4 +1,4 @@
-package com.example.project_navigation.screens
+package github.com.GraziTDS.project_navigation.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box

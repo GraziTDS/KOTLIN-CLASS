@@ -1,6 +1,5 @@
-package com.example.project_navigation.screens
+package github.com.GraziTDS.project_navigation.screens
 
-import android.R
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -21,30 +20,28 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
-fun LoginScreen(modifier: Modifier = Modifier, navController: NavController){
-
+fun PedidosScreen(modifier: Modifier = Modifier, navController: NavController) {
     Box(
         modifier = modifier
             .fillMaxSize()
             .background(Color.White)
             .padding(32.dp)
-    ){
-
+    ) {
         Text(
-            text = "LOGIN",
+            text = "PEDIDOS",
             fontSize = 30.sp,
             fontWeight = FontWeight.Bold,
             color = Color.White
         )
-
         Column(
             modifier = Modifier.align(Alignment.Center),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
             Text(
-                text = "🐱",
+                text = "🙅‍♀️",
                 fontSize = 70.sp,
+                color = Color.Black,
                 modifier = Modifier.padding(bottom = 8.dp)
             )
 
@@ -55,9 +52,9 @@ fun LoginScreen(modifier: Modifier = Modifier, navController: NavController){
                 colors = ButtonDefaults.buttonColors(Color.White)
             ) {
                 Text(
-                    text = "ENTRAR",
+                    text = "Voltar",
                     fontSize = 30.sp,
-                    color = Color.Blue
+                    color = Color.Magenta
                 )
             }
         }

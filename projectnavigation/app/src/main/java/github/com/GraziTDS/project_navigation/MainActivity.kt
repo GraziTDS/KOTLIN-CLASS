@@ -1,4 +1,4 @@
-package com.example.project_navigation
+package github.com.GraziTDS.project_navigation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,11 +11,11 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.project_navigation.screens.LoginScreen
-import com.example.project_navigation.screens.MenuScreen
-import com.example.project_navigation.screens.PedidosScreen
-import com.example.project_navigation.screens.PerfilScreen
-import com.example.project_navigation.ui.theme.ProjectnavigationTheme
+import github.com.GraziTDS.project_navigation.screens.LoginScreen
+import github.com.GraziTDS.project_navigation.screens.MenuScreen
+import github.com.GraziTDS.project_navigation.screens.PedidosScreen
+import github.com.GraziTDS.project_navigation.screens.PerfilScreen
+import github.com.GraziTDS.project_navigation.ui.theme.ProjectnavigationTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,7 +23,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ProjectnavigationTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Scaffold(modifier = Modifier.Companion.fillMaxSize()) { innerPadding ->
                     val navController = rememberNavController()
 
                     NavHost(
@@ -31,16 +31,28 @@ class MainActivity : ComponentActivity() {
                         startDestination = "login",
                     ) {
                         composable(route = "login") {
-                            LoginScreen(modifier = Modifier.padding(innerPadding), navController)
+                            LoginScreen(
+                                modifier = Modifier.Companion.padding(innerPadding),
+                                navController
+                            )
                         }
                         composable(route = "menu") {
-                            MenuScreen(modifier = Modifier.padding(innerPadding), navController)
+                            MenuScreen(
+                                modifier = Modifier.Companion.padding(innerPadding),
+                                navController
+                            )
                         }
                         composable(route = "pedidos") {
-                            PedidosScreen(modifier = Modifier.padding(innerPadding), navController)
+                            PedidosScreen(
+                                modifier = Modifier.Companion.padding(innerPadding),
+                                navController
+                            )
                         }
                         composable(route = "perfil") {
-                            PerfilScreen(modifier = Modifier.padding(innerPadding), navController)
+                            PerfilScreen(
+                                modifier = Modifier.Companion.padding(innerPadding),
+                                navController
+                            )
                         }
                     }
                 }
